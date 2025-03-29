@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EvalForge - RAG Summarizer</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>RAG-Based Summarizer</h1>
+    <nav>
+      <a href="index.html">Dashboard</a> |
+      <a href="students.html">Students</a>
+    </nav>
+  </header>
+  <main>
+    <label for="evalText"></label><textarea id="evalText" rows="10" cols="80" placeholder="Paste evaluation text here..."></textarea>
+    <br>
+    <label for="modelSelect">Select Model:</label>
+    <select id="modelSelect">
+      <option value="nous-hermes">Nous Hermes</option>
+      <option value="mistral">Mistral</option>
+      <option value="llama2">LLaMA 2</option>
+    </select>
+    <br>
+    <label><input type="checkbox" id="sanitizeToggle"> Sanitize for GPT</label>
+    <br>
+    <button onclick="generateSummary()">Summarize with Memory</button>
+    <h2>Generated Summary</h2>
+    <pre id="summaryOutput"></pre>
+    <button onclick="saveSummary()">Save This Summary</button>
+    <div id="feedbackButtons">
+      <button onclick="feedback('like')">👍</button>
+      <button onclick="feedback('dislike')">👎</button>
+    </div>
+  </main>
+  <script src="/js/rag_summary_ui.js"></script>
+</body>
+</html>

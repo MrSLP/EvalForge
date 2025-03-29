@@ -1,0 +1,48 @@
+/* Basic styles for EvalForge */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+main {
+  padding: 2em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+th, td {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+input, textarea, select, button {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+button {
+  cursor: pointer;
+}

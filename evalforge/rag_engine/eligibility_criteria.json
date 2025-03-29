@@ -1,0 +1,26 @@
+{
+  "TX": {
+    "SI": {
+      "full_name": "Speech Impairment",
+      "definition": "In Texas, SI refers to significant speech difficulties.",
+      "aliases": ["SLI"]
+    },
+    "OHI": {
+      "full_name": "Other Health Impairment",
+      "definition": "In Texas, OHI includes various health impairments affecting learning.",
+      "aliases": []
+    }
+  },
+  "CA": {
+    "SLI": {
+      "full_name": "Speech or Language Impairment",
+      "definition": "In California, SLI refers to disorders affecting communication.",
+      "aliases": ["SI"]
+    },
+    "OHI": {
+      "full_name": "Other Health Impairment",
+      "definition": "In California, OHI includes conditions that limit a child's strength, energy, or alertness.",
+      "aliases": []
+    }
+  }
+}

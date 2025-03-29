@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EvalForge - Vault</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Vault</h1>
+    <nav>
+      <a href="students.html">Students</a> |
+      <a href="timeline.html">Timeline</a>
+    </nav>
+  </header>
+  <main>
+    <label for="studentSelect"></label><select id="studentSelect"></select>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <label>Select Files (PDF, DOCX):</label>
+      <input type="file" id="files" name="files" multiple required>
+      <label for="description"></label><textarea id="description" name="description" placeholder="Optional description"></textarea>
+      <button type="submit">Upload Files</button>
+    </form>
+    <div id="uploadResult"></div>
+  </main>
+  <script src="/js/vault.js"></script>
+</body>
+</html>

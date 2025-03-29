@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EvalForge - Eligibility Viewer</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Eligibility Viewer</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="students.html">Students</a>
+    </nav>
+  </header>
+  <main>
+    <label for="eligibilityCode"></label><input type="text" id="eligibilityCode" placeholder="Enter eligibility code (e.g., SI)">
+    <label for="studentState"></label><input type="text" id="studentState" placeholder="Student State (e.g., TX)">
+    <label for="compareState"></label><input type="text" id="compareState" placeholder="Compare with (e.g., CA)">
+    <button onclick="compareEligibility()">Compare Eligibility</button>
+    <div id="eligibilityOutput"></div>
+  </main>
+  <script src="/js/eligibility_viewer.js"></script>
+</body>
+</html>

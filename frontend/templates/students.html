@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EvalForge - Students</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Profiles</h1>
+    <nav>
+      <a href="index.html">Dashboard</a> |
+      <a href="vault.html">Vault</a>
+    </nav>
+  </header>
+  <main>
+    <form id="addStudentForm">
+      <label for="name"></label><input type="text" id="name" placeholder="Student Name" required>
+      <label for="dob"></label><input type="date" id="dob" placeholder="DOB" required>
+      <label for="state"></label><input type="text" id="state" placeholder="State (e.g., TX)">
+      <label for="district"></label><input type="text" id="district" placeholder="District">
+      <label for="ard"></label><input type="text" id="ard" placeholder="ARD Date (YYYY-MM-DD)">
+      <label for="iep"></label><input type="text" id="iep" placeholder="IEP Date (YYYY-MM-DD)">
+      <label for="eligibilities"></label><input type="text" id="eligibilities" placeholder="Eligibilities (comma-separated)">
+      <button type="button" onclick="addStudent()">Add Student</button>
+    </form>
+    <table id="studentTable">
+      <thead>
+        <tr><th>ID</th><th>Name</th><th>DOB</th><th>ARD</th><th>IEP</th><th>State</th><th>District</th><th>Eligibilities</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+  <script src="/js/students.js"></script>
+</body>
+</html>
